@@ -8,5 +8,12 @@
     }, 
     // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange". If set to "afterDelay" you can configure the delay in "files.autoSaveDelay".
     "files.autoSave": "afterDelay",
-    "typescript.check.workspaceVersion": false
+    "typescript.check.workspaceVersion": false,
+    
+    // Enable usage data and errors to be sent to Microsoft.
+    "telemetry.enableTelemetry": false,
+
+    // Enable crash reports to be sent to Microsoft.
+	// This option requires restart to take effect.
+    "telemetry.enableCrashReporter": false
 }
