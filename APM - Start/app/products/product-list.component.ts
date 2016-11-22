@@ -3,8 +3,9 @@ import { IProduct } from './product';
 
 @Component({
     selector: 'pm-products',
-    templateUrl: 'app/products/product-list.component.html',
-    styleUrls: ['app/products/product-list.component.css']
+    moduleId: module.id,
+    templateUrl: 'product-list.component.html',
+    styleUrls: ['product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
     pageTitle: string = 'Product List';
@@ -41,5 +42,10 @@ export class ProductListComponent implements OnInit {
 
     ngOnInit(): void {
         console.log('In OnInit');
+    }
+
+    onRatingClicked(message: string): void {
+        alert(message);
+        //this.pageTitle = message;
     }
 }
